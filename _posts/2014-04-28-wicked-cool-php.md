@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "One"
-img: /img/one.png
+title: "Wicked Cool PHP"
+img: /img/wicked-cool-php.jpg
 ---
 
-# This is the title
+ 

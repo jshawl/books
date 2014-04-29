@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "One"
-img: /img/one.png
+title: "Content Strategy for the Web"
+img: /img/content-strategy.jpg
 ---
 
-# This is the title
+ 

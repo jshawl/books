@@ -4,14 +4,13 @@
 html, 
 body{
   height:100%;
+  font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
   width:100%;
   overflow-x:hidden;
   margin:0;
   position:relative; }
 
 .post{
-  width:33%;
-  float:left;
   padding:1em;
   img{
     max-width:100%; } }
@@ -95,4 +94,13 @@ body{
     transform:translateY(0px);
     opacity:1;
   }
+}
+
+.post{
+  padding-top:6em;
+}
+
+.post img{
+  float:left;
+  max-width:300px;
 }

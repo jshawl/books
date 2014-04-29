@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "One"
-img: /img/one.png
+title: "Beginning Mac Programming"
+img: /img/beginning-mac-programming.jpg
 ---
 
-# This is the title
+ 

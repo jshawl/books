@@ -1,7 +1,5 @@
 ---
 layout: default
 title: "One"
-img: /img/one.png
+img: /img/wordpress-plugin-development.jpg
 ---
-
-# This is the title

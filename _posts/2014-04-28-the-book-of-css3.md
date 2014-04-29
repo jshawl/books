@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "One"
-img: /img/one.png
+title: "The Book of CSS3"
+img: /img/the-book-of-css3.jpg
 ---
 
-# This is the title
+ 

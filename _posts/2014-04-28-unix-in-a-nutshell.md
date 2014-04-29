@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "One"
-img: /img/one.png
+title: "UNIX in a nutshell"
+img: /img/unix-in-a-nutshell.jpg
 ---
 
-# This is the title
+ 

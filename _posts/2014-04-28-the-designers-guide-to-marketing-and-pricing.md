@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "One"
-img: /img/one.png
+title: "The Designer's Guide to Marketing and Pricing"
+img: /img/marketing-and-pricing.jpg
 ---
 
-# This is the title
+ 

@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "One"
-img: /img/one.png
+title: "DOM Scripting"
+img: /img/dom-scripting.jpg
 ---
 
-# This is the title
+ 

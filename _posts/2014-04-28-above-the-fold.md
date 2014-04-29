@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "One"
-img: /img/one.png
+title: "Above The Fold"
+img: /img/above-the-fold.jpg
 ---
 
-# This is the title
+ 

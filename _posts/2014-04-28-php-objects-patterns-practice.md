@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "One"
-img: /img/one.png
+title: "PHP Objects, Patterns, and  Practice"
+img: /img/php-objects-patterns-and-practice.jpg
 ---
 
-# This is the title
+ 

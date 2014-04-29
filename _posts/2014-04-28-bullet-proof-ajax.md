@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "One"
-img: /img/one.png
+title: "Bulletproof AJAX"
+img: /img/bulletproof-ajax.jpg
 ---
 
-# This is the title
+ 

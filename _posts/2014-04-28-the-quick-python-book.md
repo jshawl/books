@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "One"
-img: /img/one.png
+title: "The Quick Python Book"
+img: /img/the-quick-python-book.jpg
 ---
 
-# This is the title
+ 
