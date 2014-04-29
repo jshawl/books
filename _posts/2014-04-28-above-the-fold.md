@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Two"
-img: /img/two.png
+title: "One"
+img: /img/one.png
 ---
 
 # This is the title
