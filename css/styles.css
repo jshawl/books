@@ -228,3 +228,39 @@ h1 {
   padding: 1em;
   background: #FB950A;
 }
+
+/* line 156, ../scss/styles.scss */
+.post {
+  padding-right: 6em;
+  padding-top: 5em;
+}
+@media all and (max-width: 40em) {
+  /* line 156, ../scss/styles.scss */
+  .post {
+    padding: 7em 2em 2em 2em;
+  }
+  /* line 161, ../scss/styles.scss */
+  .post img {
+    max-width: 260px;
+    margin: auto;
+    float: none;
+  }
+}
+
+/* line 169, ../scss/styles.scss */
+.post h1 {
+  margin-bottom: .5em;
+}
+
+@media all and (max-width: 40em) {
+  /* line 174, ../scss/styles.scss */
+  .home > a {
+    width: 50%;
+    padding: .25em;
+  }
+  /* line 177, ../scss/styles.scss */
+  .home > a:after {
+    top: .25em;
+    right: .25em;
+  }
+}
