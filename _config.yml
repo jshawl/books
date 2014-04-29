@@ -1,4 +1,5 @@
 name: books for sale
+title: "books for sale"
 markdown: redcarpet
 pygments: true
 permalink: /:title/
