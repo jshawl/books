@@ -8,7 +8,7 @@ title: Your New Jekyll Site
 <div id='{{post.url}}' data-url="{{post.url}}">
   <div class='post'>
   {{ post.content }}
-  <img src="/img/one.jpg">
+  <img src="./img/one.jpg">
   </div>
   <a href='#' class='exit'>&#x2717;</a>
 </div>
@@ -20,7 +20,7 @@ title: Your New Jekyll Site
 {% for post in site.posts %}
 
 <a href='#{{post.url}}'>
-  <img src='/img/one.jpg'>
+  <img src='./img/one.jpg'>
 </a>
 
 {% endfor %}
