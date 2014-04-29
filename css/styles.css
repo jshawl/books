@@ -1,102 +1,121 @@
-*{
-  box-sizing:border-box;
-}
-:target{
-  outline:none;
-}
-
-.extra{
-  display:none;
-  -webkit-transition:all .2s ease;
+/* line 1, ../scss/styles.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-:target .extra{
-  display:block;
+/* line 5, ../scss/styles.scss */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  position: relative;
 }
 
-body{
-  margin:0;
+/* line 12, ../scss/styles.scss */
+.post {
+  width: 33%;
+  float: left;
+  padding: 1em;
+}
+/* line 16, ../scss/styles.scss */
+.post img {
+  max-width: 100%;
 }
 
-.post{
-  width:33%;
-  float:left;
-  padding:1em;
-}
-
-.post img{
-  max-width:100%;
-}
-
-[data-url]{
-  position:absolute;
-  height:100%;
-  width:100%;
-  left:0;
-  top:0;
-  -webkit-transform:rotate(90deg);
-  -webkit-transform-origin:0 0;
-}
-
-.home{
-  position:absolute;
-  top:0;
-  left:0;
-  height:100%;
-  width:100%;
-
-}
-
-.home a{
-  display:block;
-  float:left;
-  width:33%;
-  padding:1em;
-  box-sizing:border-box;
-}
-
-.home{
-  padding:1em;
-  box-sizing:border-box;
-}
-
-.home a img{
-  max-width:100%;
-}
-
-:target{
-  -webkit-transform:rotate(0deg);
-  z-index:2;
-}
-
-[data-url], .home{
-  -webkit-transition:all .2s ease;
+/* line 19, ../scss/styles.scss */
+[data-url] {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
   -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  z-index: 2;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+  top: 0;
 }
 
-:target ~ .home{
-  -webkit-transform:rotate(-90deg);
+/* line 30, ../scss/styles.scss */
+.home {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body{
-  height:100%;
-  width:100%;
-  overflow-x:hidden;
-  position:relative;
+/* line 37, ../scss/styles.scss */
+.home a {
+  display: block;
+  float: left;
+  width: 33%;
+  padding: 1em;
 }
 
-.exit{
-  background:#333;
-  color:#fff;
-  width:1.5em;
-  text-decoration:none;
-  border-radius:100%;
-  height:1.5em;
-  position:absolute;
-  right:1em;
-  top:1em;
-  display:block;
-  line-height:1.5em;
-  font-size:2em;
-  text-align:center;
+/* line 43, ../scss/styles.scss */
+:target {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  z-index: 2;
+  position: relative;
+  outline: none;
+}
+
+/* line 50, ../scss/styles.scss */
+.post,
+.home {
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+  padding: 1em;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+/* line 54, ../scss/styles.scss */
+.post img,
+.home img {
+  max-width: 100%;
+}
+
+/* line 57, ../scss/styles.scss */
+.post img {
+  margin: 1em;
+}
+
+/* line 61, ../scss/styles.scss */
+:target ~ .home {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  z-index: -1;
+}
+
+/* line 66, ../scss/styles.scss */
+.exit {
+  background: #333;
+  color: #fff;
+  width: 1.5em;
+  text-decoration: none;
+  border-radius: 100%;
+  height: 1.5em;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  display: block;
+  line-height: 1.5em;
+  font-size: 2em;
+  text-align: center;
 }
