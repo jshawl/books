@@ -57,14 +57,30 @@ body {
 }
 
 /* line 37, ../scss/styles.scss */
-.home a {
+.home > a {
   display: block;
   float: left;
-  width: 33%;
+  width: 33.33%;
+  padding: 1em;
+  position: relative;
+}
+/* line 43, ../scss/styles.scss */
+.home > a img {
+  display: block;
+}
+/* line 46, ../scss/styles.scss */
+.home > a:after {
+  content: attr(data-price);
+  display: block;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  background: #fff;
+  font-size: .8em;
   padding: 1em;
 }
 
-/* line 43, ../scss/styles.scss */
+/* line 58, ../scss/styles.scss */
 :target {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
@@ -74,7 +90,7 @@ body {
   outline: none;
 }
 
-/* line 50, ../scss/styles.scss */
+/* line 65, ../scss/styles.scss */
 .post,
 .home {
   -webkit-transition: all 1s ease;
@@ -84,18 +100,18 @@ body {
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
 }
-/* line 54, ../scss/styles.scss */
+/* line 69, ../scss/styles.scss */
 .post img,
 .home img {
   max-width: 100%;
 }
 
-/* line 57, ../scss/styles.scss */
+/* line 72, ../scss/styles.scss */
 .post img {
   margin: 1em;
 }
 
-/* line 61, ../scss/styles.scss */
+/* line 76, ../scss/styles.scss */
 :target ~ .home {
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
@@ -103,7 +119,7 @@ body {
   z-index: -1;
 }
 
-/* line 66, ../scss/styles.scss */
+/* line 81, ../scss/styles.scss */
 .exit {
   background: #333;
   color: #fff;
@@ -124,7 +140,7 @@ body {
   text-align: center;
 }
 
-/* line 83, ../scss/styles.scss */
+/* line 98, ../scss/styles.scss */
 :target .exit {
   -webkit-animation: bounce-in .5s ease forwards;
   animation: bounce-in .5s ease forwards;
@@ -133,14 +149,14 @@ body {
 }
 
 @-webkit-keyframes bounce-in {
-  /* line 89, ../scss/styles.scss */
+  /* line 104, ../scss/styles.scss */
   0% {
     -webkit-transform: translateY(-50px);
     transform: translateY(-50px);
     opacity: 0;
   }
 
-  /* line 93, ../scss/styles.scss */
+  /* line 108, ../scss/styles.scss */
   100% {
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
@@ -149,7 +165,7 @@ body {
 }
 
 @keyframes bounce-in {
-  /* line 89, ../scss/styles.scss */
+  /* line 104, ../scss/styles.scss */
   0% {
     -webkit-transform: translateY(-50px);
     -ms-transform: translateY(-50px);
@@ -157,7 +173,7 @@ body {
     opacity: 0;
   }
 
-  /* line 93, ../scss/styles.scss */
+  /* line 108, ../scss/styles.scss */
   100% {
     -webkit-transform: translateY(0px);
     -ms-transform: translateY(0px);
@@ -166,13 +182,23 @@ body {
   }
 }
 
-/* line 99, ../scss/styles.scss */
+/* line 114, ../scss/styles.scss */
 .post {
   padding-top: 6em;
 }
 
-/* line 103, ../scss/styles.scss */
+/* line 118, ../scss/styles.scss */
 .post img {
   float: left;
   max-width: 300px;
+}
+
+/* line 123, ../scss/styles.scss */
+header {
+  padding-left: 1em;
+}
+
+/* line 126, ../scss/styles.scss */
+h1 {
+  margin-bottom: 0;
 }

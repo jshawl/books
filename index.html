@@ -12,17 +12,23 @@ title: Your New Jekyll Site
   <h1>{{ post.title }}</h1>
   </div>
   <a href='#' class='exit'>&#x2717;</a>
+  <a href='{{ post.amazon }}'>View on Amazon</a>
 </div>
 {% endfor %}
 
 
 <div class='home'>
-<h1>Books</h1>
+<header>
+<h1>Books For Sale!</h1>
+<small>by <a href='https://twitter.com/jshawl'>@jshawl</a></small>
+
+</header>
 {% for post in site.posts %}
 
-<a href='#{{post.url}}'>
+<a href='#{{post.url}}' data-price="${{ post.price }}">
   <img src='.{{ post.img }}'>
 </a>
+
 
 {% endfor %}
 </div>

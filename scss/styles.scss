@@ -34,11 +34,26 @@ body{
     height:100%;
     width:100%;
     box-sizing:border-box; }
-    .home a{
+    .home > a{
       display:block;
       float:left;
-      width:33%;
-      padding:1em; }
+      width:33.33%;
+      padding:1em; 
+      position:relative;
+      img{
+        display:block;
+      }
+      &:after{
+        content:attr(data-price);
+	display:block;
+	position:absolute;
+	right:1rem;
+	top:1rem;
+	background:#fff;
+	font-size:.8em;
+	padding:1em;
+      }
+  }
 
 :target{
   transform:rotate(0deg);
@@ -104,3 +119,10 @@ body{
   float:left;
   max-width:300px;
 }
+
+header{
+  padding-left:1em;
+}
+  h1{
+    margin-bottom:0;
+  }
