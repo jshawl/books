@@ -19,16 +19,17 @@ body{
 [data-url]{
   transform:rotate(90deg);
   transform-origin:0 0;
-  position:absolute;
+  position:fixed;
   height:100%;
   width:100%;
   left:0;
   z-index:2;
-  transition:all 2s ease;
+  transition:all 1s ease;
   top:0; }
 
 .home{
-    position:absolute;
+    position:fixed;
+    overflow-y:scroll;
     top:0;
     left:0;
     height:100%;
@@ -48,7 +49,7 @@ body{
 
 .post, 
 .home{
-  transition:all 2s ease;
+  transition:all 1s ease;
   padding:1em;
   transform-origin: 0 0; 
   img{
@@ -76,4 +77,22 @@ body{
   display:block;
   line-height:1.5em;
   font-size:2em;
+  opacity:0;
+  transform:translateY(-50px);
   text-align:center; }
+
+:target .exit{
+  animation: bounce-in .5s ease forwards;
+  animation-delay: 1s;
+}
+
+@keyframes bounce-in {
+  0%{
+    transform:translateY(-50px);
+    opacity:0;
+  }
+  100%{
+    transform:translateY(0px);
+    opacity:1;
+  }
+}
