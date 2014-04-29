@@ -152,3 +152,31 @@ header{
   padding:1em;
   background:#FB950A;
 }
+
+.post{
+  padding-right:6em;
+  padding-top:5em;
+  @media all and (max-width:40em){
+    padding:7em 2em 2em 2em;
+    img{
+      max-width:260px;
+      margin:auto;
+      float:none;
+    }
+
+  }
+}
+.post h1{
+  margin-bottom:.5em;
+}
+
+@media all and (max-width:40em){
+  .home > a {
+    width:50%;
+    padding:.25em;
+    &:after{
+      top:.25em;
+      right:.25em;
+    }
+  }
+}

@@ -7,13 +7,17 @@ title: Your New Jekyll Site
 {% for post in site.posts %}
 <div id='{{post.url}}' data-url="{{post.url}}">
   <div class='post'>
-  {{ post.content }}
-  <img src='.{{ post.img }}'>
-  <h1>{{ post.title }}</h1>
+    {{ post.content }}
+    <img src='.{{ post.img }}'>
+    <h1>{{ post.title }}</h1>
+    <a href='mailto:jesse@jshawl.com?Subject=I%27d%20like%20to%20buy%20%22{{ post.title }}%22&Body=Hey%20Jesse%21%0A%0AWhen%20can%20I%20pick%20up%20%22{{post.title}}%22%3F%0A%0AI%27m%20free%20on...' class='buy-now'><span>Buy Now </span><span class='price'>${{ post.price }}</span></a>
+    <a href='{{ post.amazon }}' class='button amazon'>View on Amazon</a>
+    <h2>How to Purchase:</h2>
+    <p>Clicking on "Buy Now" will open up an email template. You can let me know when and where you'd like to exchange the goods.</p>
+    <p>Not local? No problem! I'm happy to ship anywhere in the continental US. You will be responsible for shipping costs.</p>
   </div>
-  <a href='#' class='exit'>&#x2717;</a>
-  <a href='{{ post.amazon }}' class='button amazon'>View on Amazon</a>
-  <a href='mailto:jesse@jshawl.com?Subject=I%27d%20like%20to%20buy%20%22{{ post.title }}%22&Body=Hey%20Jesse%21%0A%0AWhen%20can%20I%20pick%20up%20%22{{post.title}}%22%3F%0A%0AI%27m%20free%20on...' class='buy-now'><span>Buy Now </span><span class='price'>${{ post.price }}</span></a>
+    <a href='#' class='exit'>&#x2717;</a>
+
 </div>
 {% endfor %}
 
