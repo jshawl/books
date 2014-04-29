@@ -8,20 +8,28 @@ title: Your New Jekyll Site
 <div id='{{post.url}}' data-url="{{post.url}}">
   <div class='post'>
   {{ post.content }}
-  <img src="./img/one.jpg">
+  <img src='.{{ post.img }}'>
+  <h1>{{ post.title }}</h1>
   </div>
   <a href='#' class='exit'>&#x2717;</a>
+  <a href='{{ post.amazon }}' class='button amazon'>View on Amazon</a>
+  <a href='mailto:jesse@jshawl.com?Subject=I%27d%20like%20to%20buy%20%22{{ post.title }}%22&Body=Hey%20Jesse%21%0A%0AWhen%20can%20I%20pick%20up%20%22{{post.title}}%22%3F%0A%0AI%27m%20free%20on...' class='buy-now'><span>Buy Now </span><span class='price'>${{ post.price }}</span></a>
 </div>
 {% endfor %}
 
 
 <div class='home'>
-<h1>Books</h1>
+<header>
+<h1>Books For Sale!</h1>
+<small>by <a href='https://twitter.com/jshawl'>@jshawl</a></small>
+
+</header>
 {% for post in site.posts %}
 
-<a href='#{{post.url}}'>
-  <img src='./img/one.jpg'>
+<a href='#{{post.url}}' data-price="${{ post.price }}">
+  <img src='.{{ post.img }}'>
 </a>
+
 
 {% endfor %}
 </div>

@@ -4,14 +4,13 @@
 html, 
 body{
   height:100%;
+  font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
   width:100%;
   overflow-x:hidden;
   margin:0;
   position:relative; }
 
 .post{
-  width:33%;
-  float:left;
   padding:1em;
   img{
     max-width:100%; } }
@@ -35,11 +34,26 @@ body{
     height:100%;
     width:100%;
     box-sizing:border-box; }
-    .home a{
+    .home > a{
       display:block;
       float:left;
-      width:33%;
-      padding:1em; }
+      width:33.33%;
+      padding:1em; 
+      position:relative;
+      img{
+        display:block;
+      }
+      &:after{
+        content:attr(data-price);
+	display:block;
+	position:absolute;
+	right:1rem;
+	top:1rem;
+	background:#fff;
+	font-size:.8em;
+	padding:1em;
+      }
+  }
 
 :target{
   transform:rotate(0deg);
@@ -95,4 +109,46 @@ body{
     transform:translateY(0px);
     opacity:1;
   }
+}
+
+
+.post img{
+  float:left;
+  max-width:300px;
+}
+
+header{
+  padding-left:1em;
+  margin-bottom:1.5em;
+}
+  h1{
+    margin-bottom:0;
+  }
+
+.button{
+  border:2px solid #fff;
+  display:inline-block;
+  &, & a{
+    color:#fff;
+    text-decoration:none;
+  }
+}
+
+.buy-now{
+  @extend .button;
+  span{
+    padding:1em;
+    background:#73BF3A;
+    color:#333;
+    color:#fff;
+  }
+  .price{
+    display:inline-block;
+    background:darken(#73BF3A, 10%);
+  }
+}
+
+.button.amazon{
+  padding:1em;
+  background:#FB950A;
 }

@@ -9,24 +9,23 @@
 html,
 body {
   height: 100%;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   width: 100%;
   overflow-x: hidden;
   margin: 0;
   position: relative;
 }
 
-/* line 12, ../scss/styles.scss */
+/* line 13, ../scss/styles.scss */
 .post {
-  width: 33%;
-  float: left;
   padding: 1em;
 }
-/* line 16, ../scss/styles.scss */
+/* line 15, ../scss/styles.scss */
 .post img {
   max-width: 100%;
 }
 
-/* line 19, ../scss/styles.scss */
+/* line 18, ../scss/styles.scss */
 [data-url] {
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
@@ -44,7 +43,7 @@ body {
   top: 0;
 }
 
-/* line 30, ../scss/styles.scss */
+/* line 29, ../scss/styles.scss */
 .home {
   position: fixed;
   overflow-y: scroll;
@@ -57,15 +56,31 @@ body {
   box-sizing: border-box;
 }
 
-/* line 38, ../scss/styles.scss */
-.home a {
+/* line 37, ../scss/styles.scss */
+.home > a {
   display: block;
   float: left;
-  width: 33%;
+  width: 33.33%;
+  padding: 1em;
+  position: relative;
+}
+/* line 43, ../scss/styles.scss */
+.home > a img {
+  display: block;
+}
+/* line 46, ../scss/styles.scss */
+.home > a:after {
+  content: attr(data-price);
+  display: block;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  background: #fff;
+  font-size: .8em;
   padding: 1em;
 }
 
-/* line 44, ../scss/styles.scss */
+/* line 58, ../scss/styles.scss */
 :target {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
@@ -75,7 +90,7 @@ body {
   outline: none;
 }
 
-/* line 51, ../scss/styles.scss */
+/* line 65, ../scss/styles.scss */
 .post,
 .home {
   -webkit-transition: all 1s ease;
@@ -85,18 +100,18 @@ body {
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
 }
-/* line 55, ../scss/styles.scss */
+/* line 69, ../scss/styles.scss */
 .post img,
 .home img {
   max-width: 100%;
 }
 
-/* line 58, ../scss/styles.scss */
+/* line 72, ../scss/styles.scss */
 .post img {
   margin: 1em;
 }
 
-/* line 62, ../scss/styles.scss */
+/* line 76, ../scss/styles.scss */
 :target ~ .home {
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
@@ -104,7 +119,7 @@ body {
   z-index: -1;
 }
 
-/* line 67, ../scss/styles.scss */
+/* line 81, ../scss/styles.scss */
 .exit {
   background: #333;
   color: #fff;
@@ -125,7 +140,7 @@ body {
   text-align: center;
 }
 
-/* line 84, ../scss/styles.scss */
+/* line 98, ../scss/styles.scss */
 :target .exit {
   -webkit-animation: bounce-in .5s ease forwards;
   animation: bounce-in .5s ease forwards;
@@ -134,14 +149,14 @@ body {
 }
 
 @-webkit-keyframes bounce-in {
-  /* line 90, ../scss/styles.scss */
+  /* line 104, ../scss/styles.scss */
   0% {
     -webkit-transform: translateY(-50px);
     transform: translateY(-50px);
     opacity: 0;
   }
 
-  /* line 94, ../scss/styles.scss */
+  /* line 108, ../scss/styles.scss */
   100% {
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
@@ -150,7 +165,7 @@ body {
 }
 
 @keyframes bounce-in {
-  /* line 90, ../scss/styles.scss */
+  /* line 104, ../scss/styles.scss */
   0% {
     -webkit-transform: translateY(-50px);
     -ms-transform: translateY(-50px);
@@ -158,11 +173,58 @@ body {
     opacity: 0;
   }
 
-  /* line 94, ../scss/styles.scss */
+  /* line 108, ../scss/styles.scss */
   100% {
     -webkit-transform: translateY(0px);
     -ms-transform: translateY(0px);
     transform: translateY(0px);
     opacity: 1;
   }
+}
+
+/* line 115, ../scss/styles.scss */
+.post img {
+  float: left;
+  max-width: 300px;
+}
+
+/* line 120, ../scss/styles.scss */
+header {
+  padding-left: 1em;
+  margin-bottom: 1.5em;
+}
+
+/* line 124, ../scss/styles.scss */
+h1 {
+  margin-bottom: 0;
+}
+
+/* line 128, ../scss/styles.scss */
+.button, .buy-now {
+  border: 2px solid #fff;
+  display: inline-block;
+}
+/* line 131, ../scss/styles.scss */
+.button, .buy-now, .button a, .buy-now a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 139, ../scss/styles.scss */
+.buy-now span {
+  padding: 1em;
+  background: #73BF3A;
+  color: #333;
+  color: #fff;
+}
+/* line 145, ../scss/styles.scss */
+.buy-now .price {
+  display: inline-block;
+  background: #5b982e;
+}
+
+/* line 151, ../scss/styles.scss */
+.button.amazon, .amazon.buy-now {
+  padding: 1em;
+  background: #FB950A;
 }
