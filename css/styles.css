@@ -182,23 +182,49 @@ body {
   }
 }
 
-/* line 114, ../scss/styles.scss */
-.post {
-  padding-top: 6em;
-}
-
-/* line 118, ../scss/styles.scss */
+/* line 115, ../scss/styles.scss */
 .post img {
   float: left;
   max-width: 300px;
 }
 
-/* line 123, ../scss/styles.scss */
+/* line 120, ../scss/styles.scss */
 header {
   padding-left: 1em;
+  margin-bottom: 1.5em;
 }
 
-/* line 126, ../scss/styles.scss */
+/* line 124, ../scss/styles.scss */
 h1 {
   margin-bottom: 0;
+}
+
+/* line 128, ../scss/styles.scss */
+.button, .buy-now {
+  border: 2px solid #fff;
+  display: inline-block;
+}
+/* line 131, ../scss/styles.scss */
+.button, .buy-now, .button a, .buy-now a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 139, ../scss/styles.scss */
+.buy-now span {
+  padding: 1em;
+  background: #73BF3A;
+  color: #333;
+  color: #fff;
+}
+/* line 145, ../scss/styles.scss */
+.buy-now .price {
+  display: inline-block;
+  background: #5b982e;
+}
+
+/* line 151, ../scss/styles.scss */
+.button.amazon, .amazon.buy-now {
+  padding: 1em;
+  background: #FB950A;
 }
